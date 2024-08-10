@@ -3,7 +3,7 @@ extends Control
 
 @onready var play_button = $"MarginContainer/HBoxContainer/VBoxContainer/Play Button" as Button
 @onready var exit_button = $"MarginContainer/HBoxContainer/VBoxContainer/Exit Button" as Button
-@onready var start_level = preload("res://Scenes/Test.tscn") as PackedScene #Especificar ruta de la escena principal
+@onready var start_level = preload("res://Scenes/World.tscn") as PackedScene #Especificar ruta de la escena principal
 
 func _ready():
 	play_button.button_down.connect(on_play_pressed)

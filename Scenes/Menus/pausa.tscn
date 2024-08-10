@@ -1,36 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2ksa70anbs4v"]
+[gd_scene format=3 uid="uid://wkcrl4svhsy6"]
 
-[ext_resource type="PackedScene" uid="uid://dgdkv6mam3coq" path="res://Scenes/Menus/menu_principal.tscn" id="1_uxght"]
-[ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_n4yws"]
-[ext_resource type="Script" path="res://Scenes/Menus/pausa.gd" id="2_yvfi4"]
+[node name="Pausa" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Pausa" instance=ExtResource("1_uxght")]
-script = ExtResource("2_yvfi4")
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="VBoxContainer" parent="MarginContainer" index="0"]
-theme_override_constants/separation = 32
-
-[node name="Label" parent="MarginContainer/VBoxContainer" index="1"]
-theme_override_font_sizes/font_size = 32
-text = "Pausa"
-
-[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" index="2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 4
-theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_n4yws")
-theme_override_font_sizes/font_size = 64
-text = "...puedo detener el tiempo?!"
-horizontal_alignment = 1
 
-[node name="VBoxContainer" parent="MarginContainer/HBoxContainer" index="0"]
-theme_override_constants/separation = 64
-
-[node name="Play Button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="0"]
+[node name="Reanudar" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 text = "Reanudar"
+vertical_icon_alignment = 0
 
-[node name="Exit Button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="1"]
-text = "Volver al inicio"
+[node name="Salir" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Salir"
+vertical_icon_alignment = 0
