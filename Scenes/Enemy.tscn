@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhfbh1k0spbhu"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy/Enemy.gd" id="1_yai65"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ufdhh"]
+radius = 38.1182
+
+[sub_resource type="SphereMesh" id="SphereMesh_fn3op"]
+
+[sub_resource type="Gradient" id="Gradient_oenag"]
+colors = PackedColorArray(1, 0, 0.490196, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_848pv"]
+gradient = SubResource("Gradient_oenag")
+width = 78
+fill = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_he8ym"]
+radius = 40.05
+
+[sub_resource type="Gradient" id="Gradient_pyohj"]
+offsets = PackedFloat32Array(0.0133333, 1)
+colors = PackedColorArray(1, 0, 0, 1, 0, 1, 1, 1)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_yai65")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 166)
+shape = SubResource("CircleShape2D_ufdhh")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(21, 165.5)
+scale = Vector2(76.0862, 77)
+mesh = SubResource("SphereMesh_fn3op")
+texture = SubResource("GradientTexture2D_848pv")
+
+[node name="AreaDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaDetector"]
+position = Vector2(21, 166)
+shape = SubResource("CircleShape2D_he8ym")
+
+[node name="Kill" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 20
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+fract_delta = false
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 40.0
+initial_velocity_max = 360.0
+angular_velocity_max = 360.0
+color_ramp = SubResource("Gradient_pyohj")

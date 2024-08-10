@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpal8ydhepy1v"]
+[gd_scene load_steps=6 format=3 uid="uid://cpal8ydhepy1v"]
 
 [ext_resource type="Texture2D" uid="uid://bhkybabjvmcc7" path="res://Art/Sprites/Backgrounds/Sprite_Background_01.png" id="1_8uo4o"]
 [ext_resource type="Texture2D" uid="uid://by40ky41cblk3" path="res://icon.svg" id="1_gsbab"]
 [ext_resource type="PackedScene" uid="uid://bwpdv500pbn82" path="res://Scenes/Player.tscn" id="2_vo1dh"]
+[ext_resource type="PackedScene" uid="uid://c0x7j20plt4mc" path="res://Scenes/spawner.tscn" id="4_te8p0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rb7tx"]
 size = Vector2(3951, 122)
@@ -10,6 +11,7 @@ size = Vector2(3951, 122)
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
 scale = Vector2(2.08, 2.08)
 texture = ExtResource("1_8uo4o")
 
@@ -23,4 +25,7 @@ position = Vector2(776.5, -2)
 shape = SubResource("RectangleShape2D_rb7tx")
 
 [node name="Player" parent="." instance=ExtResource("2_vo1dh")]
-position = Vector2(509, 220)
+position = Vector2(483, 477)
+
+[node name="Spawner" parent="." instance=ExtResource("4_te8p0")]
+position = Vector2(-2352, 726)
