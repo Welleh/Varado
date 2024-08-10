@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgdkv6mam3coq"]
+[gd_scene load_steps=6 format=3 uid="uid://dgdkv6mam3coq"]
 
 [ext_resource type="Script" path="res://Scenes/Menus/menu_principal.gd" id="1_mqjeo"]
+[ext_resource type="PackedScene" uid="uid://dkhgpcp8ukwt0" path="res://assets/music/intro.tscn" id="2_7cgt4"]
 [ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_p1igi"]
 [ext_resource type="Texture2D" uid="uid://ccmfbpn85djud" path="res://assets/background_posta_example.png" id="2_vqeel"]
 
@@ -16,6 +17,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mqjeo")
+
+[node name="Intro" parent="." instance=ExtResource("2_7cgt4")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

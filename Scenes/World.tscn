@@ -1,15 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0s0m4pnhby1p"]
+[gd_scene load_steps=7 format=3 uid="uid://b0s0m4pnhby1p"]
 
 [ext_resource type="Texture2D" uid="uid://bhkybabjvmcc7" path="res://Art/Sprites/Backgrounds/Sprite_Background_01.png" id="1_8uo4o"]
 [ext_resource type="Texture2D" uid="uid://by40ky41cblk3" path="res://icon.svg" id="1_gsbab"]
 [ext_resource type="Script" path="res://Scripts/World.gd" id="1_pct57"]
 [ext_resource type="PackedScene" uid="uid://b83ws0wr88kbe" path="res://Scenes/Player.tscn" id="2_vo1dh"]
+[ext_resource type="PackedScene" uid="uid://dw5a2seuqtipv" path="res://assets/music/lvl_music.tscn" id="5_e1hhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rb7tx"]
 size = Vector2(3951, 122)
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_pct57")
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("5_e1hhy")]
 
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(2.08, 2.08)
