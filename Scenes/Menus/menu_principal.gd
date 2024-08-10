@@ -12,6 +12,6 @@ func _ready():
 
 
 func on_play_pressed() -> void:
-	pass
+	get_tree().change_scene_to_packed(start_level)
 func on_exit_pressed() -> void:
 	get_tree().quit()
