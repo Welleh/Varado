@@ -6,7 +6,6 @@ var life = 4
 
 func pyhsics_update(delta):
 	if Input.is_action_just_pressed("Attack_01"):
-		owner.attack = true
 		state_machine.transition_to("StateAttack_01")
 		return
 	

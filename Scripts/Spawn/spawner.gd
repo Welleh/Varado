@@ -7,26 +7,33 @@ extends Marker2D
 var actual_spawn_interval = spawn_interval
 var timer = 0
 
+const MAX_ENEMIES = 4  # Número máximo de enemigos en pantalla
+
 func _ready():
-	if small_timer_randomization == true:
+	if small_timer_randomization:
 		actual_spawn_interval = spawn_interval + randf_range(-0.75, 0.75)
 
 func _process(delta):
 	timer += delta
-	# Handle s pawning
-	if timer >= actual_spawn_interval - 1 && !get_node("AnimationPlayer").is_playing():
+	# Handle spawning
+	if timer >= actual_spawn_interval - 1 and not get_node("AnimationPlayer").is_playing():
 		get_node("AnimationPlayer").play("spawn")
 
 func spawn():
-	timer = 0
-	var temp = Enemy.instantiate()
-	
-	var get_enemy_root = temp.get_node("Root")
-	var get_enemy_attack_01 = get_enemy_root.get_node("Attack_01")
-	get_enemy_attack_01.add_to_group("EnemyAttack")
-	
-	# The randomization at the end is so that way the collisions don't go fucky wucky
-	temp.global_position = self.global_position + Vector2(randf_range(-2, 2), randf_range(-2, 2))
-	add_sibling(temp)
-	if small_timer_randomization == true:
-		actual_spawn_interval = spawn_interval + randf_range(-0.75, 0.75)
+	if get_tree().get_nodes_in_group("Enemy").size() < MAX_ENEMIES:
+		timer = 0
+		var temp = Enemy.instantiate()
+
+		var get_enemy_root = temp.get_node("Root")
+		var get_enemy_attack_01 = get_enemy_root.get_node("Attack_01")
+		get_enemy_attack_01.add_to_group("EnemyAttack")
+		
+		# The randomization at the end is so that way the collisions don't go fucky wucky
+		temp.global_position = self.global_position + Vector2(randf_range(-2, 2), randf_range(-2, 2))
+		add_sibling(temp)
+
+		# Add the newly spawned enemy to the "Enemy" group for tracking
+		temp.add_to_group("Enemy")
+
+		if small_timer_randomization:
+			actual_spawn_interval = spawn_interval + randf_range(-0.75, 0.75)
