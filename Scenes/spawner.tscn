@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c0x7j20plt4mc"]
 
 [ext_resource type="Script" path="res://Scripts/Spawn/spawner.gd" id="1_4gjjn"]
-[ext_resource type="PackedScene" uid="uid://bhfbh1k0spbhu" path="res://Scenes/Enemy.tscn" id="2_b2ear"]
+[ext_resource type="PackedScene" uid="uid://bacr1h3uomqg6" path="res://Scenes/Enemy.tscn" id="2_b2ear"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nu32n"]
 

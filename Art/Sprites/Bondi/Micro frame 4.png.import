@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhkybabjvmcc7"
-path="res://.godot/imported/Sprite_Background_01.png-efeaedfffed50f7b44518279a894ab13.ctex"
+uid="uid://bm43eprcjeai3"
+path="res://.godot/imported/Micro frame 4.png-ff0695c50f6292706528681ed53f0f30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Backgrounds/Sprite_Background_01.png"
-dest_files=["res://.godot/imported/Sprite_Background_01.png-efeaedfffed50f7b44518279a894ab13.ctex"]
+source_file="res://Art/Sprites/Bondi/Micro frame 4.png"
+dest_files=["res://.godot/imported/Micro frame 4.png-ff0695c50f6292706528681ed53f0f30.ctex"]
 
 [params]
 
