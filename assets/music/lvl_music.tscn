@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw5a2seuqtipv"]
+
+[ext_resource type="AudioStream" uid="uid://dwebvgbiyeak1" path="res://assets/music/LastBondi_ambience.wav" id="1_b8dc0"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_b8dc0")
+volume_db = -10.0
+autoplay = true

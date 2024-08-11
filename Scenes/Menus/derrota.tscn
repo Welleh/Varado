@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj6afmguw7054"]
+
+[ext_resource type="PackedScene" uid="uid://dgdkv6mam3coq" path="res://Scenes/Menus/menu_principal.tscn" id="1_f54by"]
+[ext_resource type="Script" path="res://Scenes/Menus/derrota.gd" id="2_7sjah"]
+[ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_h2kch"]
+
+[node name="Derrota" instance=ExtResource("1_f54by")]
+script = ExtResource("2_7sjah")
+
+[node name="VBoxContainer" parent="MarginContainer" index="0"]
+theme_override_constants/separation = 32
+
+[node name="Separador2" type="Control" parent="MarginContainer/VBoxContainer" index="1"]
+layout_mode = 2
+
+[node name="Label" parent="MarginContainer/VBoxContainer" index="2"]
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "No puedo seguir..."
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" index="3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_h2kch")
+theme_override_font_sizes/font_size = 32
+text = "...pero no me puedo quedar..."
+horizontal_alignment = 1
+
+[node name="Play Button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="0"]
+text = "Volver a intentar"
+
+[node name="Exit Button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="1"]
+text = "Rendirse"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Play Button" to="." method="_on_play_button_pressed"]
