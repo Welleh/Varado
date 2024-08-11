@@ -20,6 +20,11 @@ func _process(delta):
 func spawn():
 	timer = 0
 	var temp = Enemy.instantiate()
+	
+	var get_enemy_root = temp.get_node("Root")
+	var get_enemy_attack_01 = get_enemy_root.get_node("Attack_01")
+	get_enemy_attack_01.add_to_group("EnemyAttack")
+	
 	# The randomization at the end is so that way the collisions don't go fucky wucky
 	temp.global_position = self.global_position + Vector2(randf_range(-2, 2), randf_range(-2, 2))
 	add_sibling(temp)
