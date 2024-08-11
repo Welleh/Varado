@@ -173,7 +173,9 @@ position = Vector2(-32, 64)
 shape = SubResource("RectangleShape2D_g30yi")
 debug_color = Color(1, 1, 0, 0.419608)
 
-[node name="Attack_01" type="Area2D" parent="Root"]
+[node name="Attack_01" type="Area2D" parent="Root" groups=["EnemyAttack"]]
+collision_layer = 2
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Root/Attack_01"]
 position = Vector2(192, 64)

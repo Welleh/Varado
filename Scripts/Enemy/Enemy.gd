@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var animations = $Root/AnimatedSprite2D
+@onready var root = $Root
 
 var speed = 100.0
 var is_death = false
@@ -12,9 +13,6 @@ var player
 @onready var absolute_parent = get_parent()
 
 func _ready():
-	#Con esto se puede dar vuelta el enemigo.
-	#scale.x = -1
-	
 	if absolute_parent.get_node_or_null(player_name) != null:
 		player = absolute_parent.get_node(player_name)
 
