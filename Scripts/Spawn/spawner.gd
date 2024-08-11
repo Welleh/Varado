@@ -7,7 +7,7 @@ extends Marker2D
 var actual_spawn_interval = spawn_interval
 var timer = 0
 
-const MAX_ENEMIES = 4  # Número máximo de enemigos en pantalla
+const MAX_ENEMIES = 8  # Número máximo de enemigos en pantalla
 
 func _ready():
 	if small_timer_randomization:

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var animations = $Root/AnimatedSprite2D
-var life = 3
+var life = 4
 var death = false
 @onready var state_machine = get_node_or_null("StateMachine")  # Ajusta la ruta según la estructura de tu escena
 

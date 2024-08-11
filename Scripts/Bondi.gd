@@ -3,7 +3,7 @@ extends Node2D
 @onready var animations = $AnimatedSprite2D  # Asegúrate de que el nodo AnimatedSprite2D sea el correcto
 @export var speed: float = 200.0  # Velocidad de movimiento en píxeles por segundo
 @export var target_position: Vector2 = Vector2.ZERO  # Punto al que se moverá el auto
-@export var win_scene_path: String = "res://scenes/Win.tscn"  # Ruta a la escena de win
+@export var win_scene_path: String = "res://Scenes/Menus/victoria.tscn"  # Ruta a la escena de win
 
 var reached_target = false  # Variable para verificar si el auto llegó al objetivo
 var timer: Timer
@@ -12,7 +12,7 @@ var moving = false  # Controla si el auto debe moverse
 func _ready():
 	# Configura el temporizador para esperar 60 segundos
 	timer = $Timer  # Asegúrate de que el nodo Timer se llama "Timer" en la escena
-	timer.wait_time = 60  # 1 minuto
+	timer.wait_time = 50  # 1 minuto
 	timer.one_shot = true  # Solo se dispara una vez
 	timer.start()  # Inicia el temporizador
 

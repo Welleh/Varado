@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgdkv6mam3coq"]
+[gd_scene load_steps=7 format=3 uid="uid://dgdkv6mam3coq"]
 
 [ext_resource type="Script" path="res://Scenes/Menus/menu_principal.gd" id="1_mqjeo"]
 [ext_resource type="PackedScene" uid="uid://dkhgpcp8ukwt0" path="res://assets/music/intro.tscn" id="2_7cgt4"]
 [ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_p1igi"]
 [ext_resource type="Texture2D" uid="uid://ccmfbpn85djud" path="res://assets/background_posta_example.png" id="2_vqeel"]
+[ext_resource type="AudioStream" uid="uid://b1gfp1gyjtmaj" path="res://assets/SFX/Character/Sound_Cassete.mp3" id="5_0l03c"]
 
 [sub_resource type="SystemFont" id="SystemFont_i372n"]
 font_names = PackedStringArray("Yu Gothic")
@@ -50,9 +51,9 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("2_p1igi")
@@ -72,7 +73,7 @@ alignment = 1
 [node name="Play Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_colors/font_color = Color(0.784314, 0.219608, 0.254902, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = SubResource("SystemFont_i372n")
@@ -82,9 +83,12 @@ text = "Jugar"
 [node name="Exit Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_colors/font_color = Color(0.784314, 0.219608, 0.254902, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = SubResource("SystemFont_i372n")
 theme_override_font_sizes/font_size = 24
 text = "Salir"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0l03c")

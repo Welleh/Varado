@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bwpdv500pbn82"]
+[gd_scene load_steps=56 format=3 uid="uid://bwpdv500pbn82"]
 
 [ext_resource type="Script" path="res://Scripts/Player/script_player.gd" id="1_038vx"]
 [ext_resource type="Texture2D" uid="uid://dlcr11b0inhxi" path="res://Art/Sprites/Player/sprite_player_idle.png" id="2_4bkty"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Scripts/Player/script_state_death.gd" id="5_83i0r"]
 [ext_resource type="Texture2D" uid="uid://cs13aiiqjup7" path="res://Art/Sprites/Player/sprite_player_death.png" id="6_gbjtl"]
 [ext_resource type="Script" path="res://Scripts/script_outside_view.gd" id="10_tuhak"]
+[ext_resource type="AudioStream" uid="uid://bilydq5d6lcs4" path="res://assets/SFX/Character/Swoosh_3.wav" id="11_1p0b8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ui6ye"]
 size = Vector2(128, 640)
@@ -380,6 +381,9 @@ debug_color = Color(1, 0, 0, 0.419608)
 position = Vector2(3.05176e-05, 64)
 scale = Vector2(51.2, 57.6)
 script = ExtResource("10_tuhak")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_1p0b8")
 
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateAttack_01" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateDeath" method="_on_animated_sprite_2d_animation_finished"]

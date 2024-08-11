@@ -19,5 +19,12 @@ func _process(delta):
 		owner.position.x = move_toward(owner.position.x, owner.player.get("position").x, owner.speed * delta)
 		owner.position.y = move_toward(owner.position.y, owner.player.get("position").y, owner.speed * delta)
 	
+		var facing_direction = sign(owner.player.get("position").x - owner.position.x)
+		
+		if facing_direction == 0:
+			facing_direction = 1
+			
+		owner.root.scale.x = facing_direction
+	
 	owner.move_and_slide()
 

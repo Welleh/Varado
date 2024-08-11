@@ -1,6 +1,7 @@
 extends State
 
 func enter():
+	$"../../AudioStreamPlayer".play()
 	state_owner.animations.play("attack_01")
 
 func update(delta):

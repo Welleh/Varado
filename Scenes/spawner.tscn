@@ -63,6 +63,7 @@ script = ExtResource("1_4gjjn")
 Enemy = ExtResource("2_b2ear")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0)
 scale = Vector2(40, 40)
 mesh = SubResource("SphereMesh_nu32n")
@@ -74,6 +75,7 @@ libraries = {
 }
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
 texture = ExtResource("3_0be6g")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]

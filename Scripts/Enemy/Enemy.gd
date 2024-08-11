@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
 @onready var animations = $Root/AnimatedSprite2D
+@onready var root = $Root
 
-var speed = 300.0
+var speed = 350.0
 var is_death = false
 var attack = false
 
