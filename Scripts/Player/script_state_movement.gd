@@ -1,6 +1,8 @@
 extends State
 
-const SPEED = 500.0
+const SPEED = 1000.0
+
+var life = 4
 
 func pyhsics_update(delta):
 	if Input.is_action_just_pressed("Attack_01"):

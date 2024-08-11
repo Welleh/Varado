@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8gfpjj5feqtn"
-path="res://.godot/imported/sprite_player_attack_01.png-9988ba77d68bc07ab37799b792ac6ad7.ctex"
+uid="uid://bm43eprcjeai3"
+path="res://.godot/imported/Micro frame 4.png-ff0695c50f6292706528681ed53f0f30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Player/sprite_player_attack_01.png"
-dest_files=["res://.godot/imported/sprite_player_attack_01.png-9988ba77d68bc07ab37799b792ac6ad7.ctex"]
+source_file="res://Art/Sprites/Bondi/Micro frame 4.png"
+dest_files=["res://.godot/imported/Micro frame 4.png-ff0695c50f6292706528681ed53f0f30.ctex"]
 
 [params]
 

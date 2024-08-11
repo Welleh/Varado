@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8gfpjj5feqtn"
-path="res://.godot/imported/sprite_player_attack_01.png-9988ba77d68bc07ab37799b792ac6ad7.ctex"
+uid="uid://6kwdndt68ywx"
+path="res://.godot/imported/sprite_enemy_death.png-24132b2945fcfad0d3fd91f1ebf658aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Player/sprite_player_attack_01.png"
-dest_files=["res://.godot/imported/sprite_player_attack_01.png-9988ba77d68bc07ab37799b792ac6ad7.ctex"]
+source_file="res://Art/sprite_enemy_death.png"
+dest_files=["res://.godot/imported/sprite_enemy_death.png-24132b2945fcfad0d3fd91f1ebf658aa.ctex"]
 
 [params]
 

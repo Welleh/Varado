@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://q6a0vt8vcw1f"]
+
+[ext_resource type="Texture2D" uid="uid://by40ky41cblk3" path="res://icon.svg" id="1_w6x2k"]
+
+[node name="Lose" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -384)
+zoom = Vector2(0.28, 0.24)
+limit_left = -9600
+limit_top = -2688
+limit_right = 9600
+limit_bottom = 896
+limit_smoothed = true
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-63, -485)
+scale = Vector2(20.2656, 18.4766)
+texture = ExtResource("1_w6x2k")
