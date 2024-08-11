@@ -14,7 +14,6 @@ func _ready():
 	timer = $Timer  # Asegúrate de que el nodo Timer se llama "Timer" en la escena
 	timer.wait_time = 60  # 1 minuto
 	timer.one_shot = true  # Solo se dispara una vez
-	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
 	timer.start()  # Inicia el temporizador
 
 	# Detenemos la animación al inicio
