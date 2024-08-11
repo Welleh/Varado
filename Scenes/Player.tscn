@@ -1,5 +1,6 @@
 [gd_scene load_steps=54 format=3 uid="uid://bwpdv500pbn82"]
 
+
 [ext_resource type="Script" path="res://Scripts/Player/script_player.gd" id="1_038vx"]
 [ext_resource type="Texture2D" uid="uid://dlcr11b0inhxi" path="res://Art/Sprites/Player/sprite_player_idle.png" id="2_4bkty"]
 [ext_resource type="Script" path="res://Scripts/StateMachine/script_state_machine.gd" id="2_356qd"]
@@ -366,6 +367,8 @@ monitorable = false
 position = Vector2(0, 96)
 shape = SubResource("RectangleShape2D_os0h6")
 debug_color = Color(1, 1, 0, 0.419608)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Root/Camera2D"]
 
 [node name="Atack_01" type="Area2D" parent="Root"]
 

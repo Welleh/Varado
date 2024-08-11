@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://34ab2y72e15m" path="res://Scenes/TextoInicio.tscn" id="3_04kab"]
 [ext_resource type="PackedScene" uid="uid://c0x7j20plt4mc" path="res://Scenes/spawner.tscn" id="4_te8p0"]
 
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rb7tx"]
 size = Vector2(24532, 128)
 
@@ -16,6 +17,9 @@ size = Vector2(128, 1600)
 size = Vector2(3072, 448)
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_pct57")
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("5_e1hhy")]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(5.96046e-08, -896)
