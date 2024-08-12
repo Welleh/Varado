@@ -13,7 +13,7 @@ size = Vector2(24532, 128)
 size = Vector2(128, 1600)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eewl8"]
-size = Vector2(3072, 448)
+size = Vector2(2880, 384)
 
 [node name="World" type="Node2D"]
 
@@ -41,7 +41,7 @@ position = Vector2(-9536, 96)
 shape = SubResource("RectangleShape2D_x8r7f")
 
 [node name="BusStop" type="CollisionShape2D" parent="Collisions"]
-position = Vector2(7296, -480)
+position = Vector2(7328, -512)
 shape = SubResource("RectangleShape2D_eewl8")
 
 [node name="Player" parent="." instance=ExtResource("2_vo1dh")]
