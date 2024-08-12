@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://cpal8ydhepy1v"]
 
-[ext_resource type="Texture2D" uid="uid://bhkybabjvmcc7" path="res://Art/Sprites/Backgrounds/Sprite_Background_01.png" id="1_8uo4o"]
+[ext_resource type="Texture2D" uid="uid://bhkybabjvmcc7" path="res://Art/Sprites/Backgrounds/sprite_background_01.png" id="1_8uo4o"]
 [ext_resource type="PackedScene" uid="uid://do4vanc1qg28d" path="res://Scenes/Bondi.tscn" id="1_pm555"]
 [ext_resource type="PackedScene" uid="uid://bwpdv500pbn82" path="res://Scenes/Player.tscn" id="2_vo1dh"]
 [ext_resource type="PackedScene" uid="uid://34ab2y72e15m" path="res://Scenes/TextoInicio.tscn" id="3_04kab"]
@@ -16,7 +16,7 @@ size = Vector2(24532, 128)
 size = Vector2(128, 1600)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eewl8"]
-size = Vector2(3072, 448)
+size = Vector2(2880, 384)
 
 [node name="World" type="Node2D"]
 
@@ -44,7 +44,7 @@ position = Vector2(-9536, 96)
 shape = SubResource("RectangleShape2D_x8r7f")
 
 [node name="BusStop" type="CollisionShape2D" parent="Collisions"]
-position = Vector2(7296, -480)
+position = Vector2(7328, -512)
 shape = SubResource("RectangleShape2D_eewl8")
 
 [node name="Player" parent="." node_paths=PackedStringArray("hud") instance=ExtResource("2_vo1dh")]

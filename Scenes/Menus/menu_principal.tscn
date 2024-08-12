@@ -91,10 +91,10 @@ text = "Salir"
 stream = ExtResource("5_0l03c")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 66.0
+layout_mode = 0
 offset_top = 495.0
-offset_right = 1058.0
-offset_bottom = 579.0
+offset_right = 1152.0
+offset_bottom = 576.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -104,3 +104,24 @@ theme_override_fonts/font = ExtResource("5_exbtk")
 theme_override_font_sizes/font_size = 32
 text = "Se te pasó el bondi, intenta 
 espera el siguiente... sin morir."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 564.0
+offset_right = 1088.0
+offset_bottom = 648.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("5_exbtk")
+theme_override_font_sizes/font_size = 15
+text = "Creado por: Gianni Maratta, Nahuel Quiroga, Casiel Bonada,
+ Bernardo Sánchez. Gabriel Araya, Tomás Di Leo, Martín Sosa.
+Agradecimientos: Franco Sorbello, Retsa Games.
+"
+horizontal_alignment = 1
+vertical_alignment = 1

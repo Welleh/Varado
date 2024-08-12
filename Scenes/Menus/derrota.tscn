@@ -56,7 +56,6 @@ autoplay = true
 
 [node name="Label" parent="." index="6"]
 visible = false
-layout_mode = 0
 offset_left = 15.0
 offset_top = 464.0
 offset_right = 1071.0

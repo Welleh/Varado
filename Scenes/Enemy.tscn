@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bacr1h3uomqg6"]
+[gd_scene load_steps=33 format=3 uid="uid://bacr1h3uomqg6"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy/Enemy.gd" id="1_yai65"]
 [ext_resource type="Script" path="res://Scripts/StateMachine/script_state_machine.gd" id="2_5ie0w"]
@@ -9,12 +9,13 @@
 [ext_resource type="Script" path="res://Scripts/Enemy/script_state_enemy_death.gd" id="5_u2gls"]
 [ext_resource type="Texture2D" uid="uid://bnunas0vsdkv" path="res://Art/Sprites/Enemy/sprite_enemy_death.png" id="6_r6qvy"]
 [ext_resource type="AudioStream" uid="uid://bilydq5d6lcs4" path="res://assets/SFX/Character/Swoosh_3.wav" id="9_3dy3c"]
+[ext_resource type="AudioStream" uid="uid://bks04v5fp72p8" path="res://assets/SFX/Character/Sound_PhantomPunch.wav" id="10_psniq"]
 [ext_resource type="AudioStream" uid="uid://dpfls6f8nooue" path="res://assets/SFX/Character/Sound_ManAttackScreamingSpecial_1.mp3" id="10_xw071"]
 [ext_resource type="AudioStream" uid="uid://ctq0hlvppxdvk" path="res://assets/SFX/Character/Sound_ManAttackScreamingSpecial_2.mp3" id="11_muj1j"]
 [ext_resource type="AudioStream" uid="uid://by18ag71q2625" path="res://assets/SFX/Character/Sound_ManAttackScreamingSpecial_3.mp3" id="12_5sx07"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rqhx8"]
-size = Vector2(448, 832)
+size = Vector2(448, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1hik6"]
 atlas = ExtResource("2_tbqko")
@@ -146,7 +147,7 @@ colors = PackedColorArray(1, 0, 0, 1, 0, 1, 1, 1)
 script = ExtResource("1_yai65")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-32, 32)
+position = Vector2(-32, 224)
 shape = SubResource("RectangleShape2D_rqhx8")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
@@ -201,6 +202,9 @@ color_ramp = SubResource("Gradient_pyohj")
 
 [node name="Swoosh" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_3dy3c")
+
+[node name="Punched" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_psniq")
 
 [node name="Death_01" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_xw071")

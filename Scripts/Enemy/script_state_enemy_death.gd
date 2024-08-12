@@ -6,6 +6,8 @@ func enter():
 	state_owner.animations.play("death")
 	var my_random_number = rng.randi_range(0, 2)
 	
+	$"../../Punched".play()
+	
 	if (my_random_number == 0):
 		$"../../Death_01".play()
 	
