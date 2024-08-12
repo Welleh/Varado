@@ -2,6 +2,7 @@ extends State
 
 func enter():
 	state_owner.animations.play("attack_01")
+	$"../../Swoosh".play()
 
 func update(delta):
 	if owner.is_death:

@@ -17,6 +17,8 @@ func _on_atack_01_body_entered(body):
 
 func take_damage(amount: int):
 	life -= amount
+	$Punched.play()
+	$PunchedScream.play()
 	update_life_label()
 	if life <= 0 and not death:
 		die()

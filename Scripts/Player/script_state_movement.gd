@@ -15,6 +15,10 @@ func pyhsics_update(delta):
 	if horizontal_direction:
 		state_owner.velocity.x = horizontal_direction * SPEED
 		$"../../Root".scale.x = 1 if horizontal_direction > 0 else -1
+		
+		if not $"../../Steps".playing:
+			$"../../Steps".play()
+		
 	else:
 		state_owner.velocity.x = move_toward(state_owner.velocity.x, 0, SPEED)
 	

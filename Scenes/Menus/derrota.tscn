@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cj6afmguw7054"]
+[gd_scene load_steps=6 format=3 uid="uid://cj6afmguw7054"]
 
 [ext_resource type="PackedScene" uid="uid://dgdkv6mam3coq" path="res://Scenes/Menus/menu_principal.tscn" id="1_f54by"]
 [ext_resource type="Script" path="res://Scenes/Menus/derrota.gd" id="2_7sjah"]
 [ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_h2kch"]
 [ext_resource type="AudioStream" uid="uid://b1gfp1gyjtmaj" path="res://assets/SFX/Character/Sound_Cassete.mp3" id="4_uvafs"]
+[ext_resource type="AudioStream" uid="uid://c07jnp7pe76eq" path="res://assets/SFX/Character/Sound_Phantom_2.wav" id="5_sh4s4"]
 
 [node name="Derrota" instance=ExtResource("1_f54by")]
 script = ExtResource("2_7sjah")
@@ -35,7 +36,11 @@ text = "Volver a intentar"
 [node name="Exit Button" parent="MarginContainer/HBoxContainer/VBoxContainer" index="1"]
 text = "Rendirse"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="3"]
 stream = ExtResource("4_uvafs")
+
+[node name="PhantomNoice" type="AudioStreamPlayer" parent="." index="5"]
+stream = ExtResource("5_sh4s4")
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Play Button" to="." method="_on_play_button_pressed"]
