@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd2io8fvghvgi"]
+[gd_scene load_steps=5 format=3 uid="uid://bd2io8fvghvgi"]
 
 [ext_resource type="PackedScene" uid="uid://dc58qiu4krc2g" path="res://Scenes/TimerBondi.tscn" id="1_0tmm8"]
 [ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_s44nh"]
 [ext_resource type="Texture2D" uid="uid://c0rb262gl2b2f" path="res://Art/Corazon.png" id="2_vhbxx"]
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="4_fjnpq"]
 
 [node name="HUD" type="Control" node_paths=PackedStringArray("life_label", "timer_bondi")]
 layout_mode = 3
@@ -19,7 +20,7 @@ timer_bondi = NodePath("TimerBondi")
 position = Vector2(48, 120)
 
 [node name="Corazon" type="Sprite2D" parent="."]
-position = Vector2(55.9999, 87.9999)
+position = Vector2(55.9999, 73.9999)
 scale = Vector2(2, 2)
 texture = ExtResource("2_vhbxx")
 
@@ -29,5 +30,6 @@ offset_left = 80.0
 offset_top = 48.0
 offset_right = 400.0
 offset_bottom = 131.0
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("4_fjnpq")
+theme_override_font_sizes/font_size = 35
 text = "aa"

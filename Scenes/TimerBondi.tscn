@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dc58qiu4krc2g"]
+[gd_scene load_steps=3 format=3 uid="uid://dc58qiu4krc2g"]
 
 [ext_resource type="Script" path="res://Scripts/TimerBondi.gd" id="1_3cpvn"]
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="2_cejsq"]
 
 [node name="TimerBondi" type="Node2D"]
 script = ExtResource("1_3cpvn")
@@ -10,10 +11,12 @@ script = ExtResource("1_3cpvn")
 [node name="TimeLabel" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("2_cejsq")
+theme_override_font_sizes/font_size = 35
 text = "A"
 
 [node name="MessageLabel" type="Label" parent="."]
 offset_right = 241.0
 offset_bottom = 99.0
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("2_cejsq")
+theme_override_font_sizes/font_size = 35

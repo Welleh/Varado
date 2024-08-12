@@ -2,13 +2,10 @@
 
 [ext_resource type="Script" path="res://Scenes/Menus/menu_principal.gd" id="1_mqjeo"]
 [ext_resource type="PackedScene" uid="uid://dkhgpcp8ukwt0" path="res://assets/music/intro.tscn" id="2_7cgt4"]
-[ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_p1igi"]
 [ext_resource type="Texture2D" uid="uid://ccmfbpn85djud" path="res://assets/background_posta_example.png" id="2_vqeel"]
+[ext_resource type="FontFile" uid="uid://cq3gtslaxkp4p" path="res://assets/fonts/dogicabold.ttf" id="4_np25b"]
 [ext_resource type="AudioStream" uid="uid://b1gfp1gyjtmaj" path="res://assets/SFX/Character/Sound_Cassete.mp3" id="5_0l03c"]
-
-[sub_resource type="SystemFont" id="SystemFont_i372n"]
-font_names = PackedStringArray("Yu Gothic")
-subpixel_positioning = 0
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="5_exbtk"]
 
 [node name="Menu_principal" type="Control"]
 layout_mode = 3
@@ -56,7 +53,7 @@ theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_p1igi")
+theme_override_fonts/font = ExtResource("4_np25b")
 theme_override_font_sizes/font_size = 96
 text = "Varado"
 horizontal_alignment = 1
@@ -76,7 +73,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = SubResource("SystemFont_i372n")
+theme_override_fonts/font = ExtResource("5_exbtk")
 theme_override_font_sizes/font_size = 24
 text = "Jugar"
 
@@ -86,7 +83,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = SubResource("SystemFont_i372n")
+theme_override_fonts/font = ExtResource("5_exbtk")
 theme_override_font_sizes/font_size = 24
 text = "Salir"
 

@@ -1,20 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://34ab2y72e15m"]
+[gd_scene load_steps=3 format=3 uid="uid://34ab2y72e15m"]
 
 [ext_resource type="Script" path="res://Scripts/TextoInicio.gd" id="1_7o0h2"]
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="2_t8u7g"]
 
 [node name="TextoInicio" type="Node2D"]
 script = ExtResource("1_7o0h2")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_right = 129.0
+offset_right = 313.0
 offset_bottom = 41.0
 size_flags_horizontal = 4
+theme_override_fonts/normal_font = ExtResource("2_t8u7g")
 theme_override_font_sizes/normal_font_size = 27
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 0
 theme_override_font_sizes/bold_italics_font_size = 0
 theme_override_font_sizes/mono_font_size = 2
-text = "Sobrevive"
+text = "¡Sobrevive!"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0

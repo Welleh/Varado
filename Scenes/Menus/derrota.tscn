@@ -2,12 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://dgdkv6mam3coq" path="res://Scenes/Menus/menu_principal.tscn" id="1_f54by"]
 [ext_resource type="Script" path="res://Scenes/Menus/derrota.gd" id="2_7sjah"]
-[ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="2_h2kch"]
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="3_upbgp"]
 [ext_resource type="AudioStream" uid="uid://b1gfp1gyjtmaj" path="res://assets/SFX/Character/Sound_Cassete.mp3" id="4_uvafs"]
 [ext_resource type="AudioStream" uid="uid://c07jnp7pe76eq" path="res://assets/SFX/Character/Sound_Phantom_2.wav" id="5_sh4s4"]
 
 [node name="Derrota" instance=ExtResource("1_f54by")]
 script = ExtResource("2_7sjah")
+
+[node name="MarginContainer" parent="." index="2"]
+offset_top = -1.0
+offset_bottom = -1.0
 
 [node name="VBoxContainer" parent="MarginContainer" index="0"]
 theme_override_constants/separation = 32
@@ -16,6 +20,7 @@ theme_override_constants/separation = 32
 layout_mode = 2
 
 [node name="Label" parent="MarginContainer/VBoxContainer" index="2"]
+theme_override_font_sizes/font_size = 60
 text = "No puedo seguir..."
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" index="3"]
@@ -25,7 +30,7 @@ theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/outline_size = 3
-theme_override_fonts/font = ExtResource("2_h2kch")
+theme_override_fonts/font = ExtResource("3_upbgp")
 theme_override_font_sizes/font_size = 32
 text = "Pero no me puedo quedar..."
 horizontal_alignment = 1

@@ -2,15 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://dgdkv6mam3coq" path="res://Scenes/Menus/menu_principal.tscn" id="1_dtd7x"]
 [ext_resource type="Script" path="res://Scenes/Menus/derrota.gd" id="2_16d6e"]
-[ext_resource type="FontFile" uid="uid://be1o0rdg2s17e" path="res://assets/fonts/BenguiatStd-Book.ttf" id="3_1q24b"]
 [ext_resource type="Texture2D" uid="uid://cgm30fcy0dq60" path="res://Art/Sprite_Win.png" id="4_4id3l"]
+[ext_resource type="FontFile" uid="uid://cks5urys11vab" path="res://assets/fonts/dogicabold.otf" id="4_6eydn"]
 [ext_resource type="AudioStream" uid="uid://b1gfp1gyjtmaj" path="res://assets/SFX/Character/Sound_Cassete.mp3" id="4_l2rht"]
 
 [node name="Derrota" instance=ExtResource("1_dtd7x")]
 script = ExtResource("2_16d6e")
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer" index="0"]
-position = Vector2(576, 429.19)
+position = Vector2(928, 441.19)
 texture = ExtResource("4_4id3l")
 
 [node name="VBoxContainer" parent="MarginContainer" index="1"]
@@ -20,7 +20,9 @@ theme_override_constants/separation = 32
 layout_mode = 2
 
 [node name="Label" parent="MarginContainer/VBoxContainer" index="2"]
-text = "Por fin llego el bondi!!!"
+theme_override_font_sizes/font_size = 60
+text = "Por fin llego 
+el bondi!!!"
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" index="3"]
 layout_mode = 2
@@ -29,7 +31,7 @@ theme_override_colors/font_shadow_color = Color(0.4, 0.0823529, 0.105882, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/outline_size = 3
-theme_override_fonts/font = ExtResource("3_1q24b")
+theme_override_fonts/font = ExtResource("4_6eydn")
 theme_override_font_sizes/font_size = 32
 text = "Por fin! Hora de mimir"
 horizontal_alignment = 1
