@@ -9,9 +9,15 @@
 [node name="Derrota" instance=ExtResource("1_f54by")]
 script = ExtResource("2_7sjah")
 
+[node name="TextureRect" parent="." index="1"]
+offset_left = -385.0
+offset_top = -216.0
+offset_right = 383.0
+offset_bottom = 216.0
+
 [node name="MarginContainer" parent="." index="2"]
-offset_top = -1.0
-offset_bottom = -1.0
+offset_top = 72.0
+offset_bottom = 72.0
 
 [node name="VBoxContainer" parent="MarginContainer" index="0"]
 theme_override_constants/separation = 32
@@ -47,5 +53,13 @@ stream = ExtResource("4_uvafs")
 [node name="PhantomNoice" type="AudioStreamPlayer" parent="." index="5"]
 stream = ExtResource("5_sh4s4")
 autoplay = true
+
+[node name="Label" parent="." index="6"]
+visible = false
+layout_mode = 0
+offset_left = 15.0
+offset_top = 464.0
+offset_right = 1071.0
+offset_bottom = 548.0
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Play Button" to="." method="_on_play_button_pressed"]

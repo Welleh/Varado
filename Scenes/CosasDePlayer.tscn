@@ -33,3 +33,18 @@ offset_bottom = 131.0
 theme_override_fonts/font = ExtResource("4_fjnpq")
 theme_override_font_sizes/font_size = 35
 text = "aa"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 558.0
+offset_right = 1265.0
+offset_bottom = 691.0
+theme_override_fonts/font = ExtResource("4_fjnpq")
+theme_override_font_sizes/font_size = 15
+text = "Movimiento
+Flechas
+
+Ataque
+X"
+horizontal_alignment = 1

@@ -4,7 +4,7 @@ extends Node2D
 @onready var time_label: Label = $TimeLabel
 @onready var message_label: Label = $MessageLabel  # Asegúrate de que existe un nodo Label con este nombre
 
-var time_left: float = 62.0  # Tiempo inicial en segundos
+var time_left: float = 60  # Tiempo inicial en segundos
 
 func _ready():
 	# Verifica que los nodos existen
