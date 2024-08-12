@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc58qiu4krc2g"]
+
+[ext_resource type="Script" path="res://Scripts/TimerBondi.gd" id="1_3cpvn"]
+
+[node name="TimerBondi" type="Node2D"]
+script = ExtResource("1_3cpvn")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TimeLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 70
+
+[node name="MessageLabel" type="Label" parent="."]
+offset_right = 241.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 70
+text = "¡Subite al bondi!"

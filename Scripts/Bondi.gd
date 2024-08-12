@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var animations = $AnimatedSprite2D  # Asegúrate de que el nodo AnimatedSprite2D sea el correcto
-@export var speed: float = 200.0  # Velocidad de movimiento en píxeles por segundo
+@export var speed: float = 400.0  # Velocidad de movimiento en píxeles por segundo
 @export var target_position: Vector2 = Vector2.ZERO  # Punto al que se moverá el auto
 @export var win_scene_path: String = "res://Scenes/Menus/victoria.tscn"  # Ruta a la escena de win
 

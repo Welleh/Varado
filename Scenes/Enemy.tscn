@@ -129,7 +129,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g30yi"]
-size = Vector2(576, 768)
+size = Vector2(592, 768)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mbimh"]
 size = Vector2(293, 229)
@@ -169,7 +169,7 @@ autoplay = "idle"
 [node name="Area" type="Area2D" parent="Root"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Root/Area"]
-position = Vector2(-32, 64)
+position = Vector2(-6, 61)
 shape = SubResource("RectangleShape2D_g30yi")
 debug_color = Color(1, 1, 0, 0.419608)
 
@@ -197,5 +197,5 @@ color_ramp = SubResource("Gradient_pyohj")
 
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateEnemyAttack_01" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateEnemyDeath" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Root/Area" to="." method="_on_attack_01_body_entered"]
 [connection signal="body_entered" from="Root/Area" to="." method="_on_area_body_entered"]
+[connection signal="body_entered" from="Root/Area" to="." method="_on_attack_01_body_entered"]

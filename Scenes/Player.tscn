@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bwpdv500pbn82"]
+[gd_scene load_steps=58 format=3 uid="uid://bwpdv500pbn82"]
 
 [ext_resource type="Script" path="res://Scripts/Player/script_player.gd" id="1_038vx"]
 [ext_resource type="Texture2D" uid="uid://dlcr11b0inhxi" path="res://Art/Sprites/Player/sprite_player_idle.png" id="2_4bkty"]
@@ -9,8 +9,10 @@
 [ext_resource type="Script" path="res://Scripts/Player/script_state_attack_01.gd" id="4_o3xey"]
 [ext_resource type="Script" path="res://Scripts/Player/script_state_death.gd" id="5_83i0r"]
 [ext_resource type="Texture2D" uid="uid://cs13aiiqjup7" path="res://Art/Sprites/Player/sprite_player_death.png" id="6_gbjtl"]
+[ext_resource type="PackedScene" uid="uid://dc58qiu4krc2g" path="res://Scenes/TimerBondi.tscn" id="10_jwrpf"]
 [ext_resource type="Script" path="res://Scripts/script_outside_view.gd" id="10_tuhak"]
 [ext_resource type="AudioStream" uid="uid://bilydq5d6lcs4" path="res://assets/SFX/Character/Swoosh_3.wav" id="11_1p0b8"]
+[ext_resource type="Texture2D" uid="uid://c0rb262gl2b2f" path="res://Art/Corazon.png" id="13_2tmtv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ui6ye"]
 size = Vector2(128, 640)
@@ -385,9 +387,29 @@ script = ExtResource("10_tuhak")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_1p0b8")
 
+[node name="InvulnerabilityTimer" type="Timer" parent="."]
+
+[node name="TimerBondi" parent="." instance=ExtResource("10_jwrpf")]
+visible = false
+position = Vector2(-1486, -1477)
+
+[node name="LifeLabel" type="Label" parent="."]
+visible = false
+offset_left = -1887.0
+offset_top = -1744.0
+offset_right = -1567.0
+offset_bottom = -1661.0
+theme_override_font_sizes/font_size = 60
+
+[node name="Corazon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1962, -1684)
+scale = Vector2(5.53125, 5.53125)
+texture = ExtResource("13_2tmtv")
+
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateAttack_01" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_finished" from="Root/AnimatedSprite2D" to="StateMachine/StateDeath" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="body_entered" from="Root/PlayerArea" to="." method="_on_player_area_body_entered"]
 [connection signal="body_entered" from="Root/PlayerArea" to="." method="_on_area_body_entered"]
+[connection signal="body_entered" from="Root/PlayerArea" to="." method="_on_player_area_body_entered"]
 [connection signal="body_entered" from="Root/Atack_01" to="." method="_on_atack_01_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="VisibleOnScreenNotifier2D" method="_on_screen_exited"]

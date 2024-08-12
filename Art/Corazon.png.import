@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhkybabjvmcc7"
-path="res://.godot/imported/Sprite_Background_01.png-efeaedfffed50f7b44518279a894ab13.ctex"
+uid="uid://c0rb262gl2b2f"
+path="res://.godot/imported/Corazon.png-573b64a72fa3c3b35ea880ba4a6487fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Backgrounds/Sprite_Background_01.png"
-dest_files=["res://.godot/imported/Sprite_Background_01.png-efeaedfffed50f7b44518279a894ab13.ctex"]
+source_file="res://Art/Corazon.png"
+dest_files=["res://.godot/imported/Corazon.png-573b64a72fa3c3b35ea880ba4a6487fd.ctex"]
 
 [params]
 
