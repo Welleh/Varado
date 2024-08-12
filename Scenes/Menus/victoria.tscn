@@ -43,7 +43,7 @@ text = "Volver a pasarla mal"
 stream = ExtResource("4_l2rht")
 
 [node name="Label" parent="." index="5"]
-offset_left = 0.0
+visible = false
 offset_top = 0.0
 offset_right = 992.0
 offset_bottom = 84.0

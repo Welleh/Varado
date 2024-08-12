@@ -393,6 +393,7 @@ stream = ExtResource("11_1p0b8")
 
 [node name="Death" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_kspqa")
+volume_db = -20.0
 
 [node name="Punched" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_tufkg")
